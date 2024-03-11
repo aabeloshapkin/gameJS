@@ -16,8 +16,8 @@ export default class View {
     renderPlayer1(player1){
         this.context.drawImage(
             this.sprite.image,
-            0, 0, 64, 64,
-            0, 0, 32, 32,
+            0, 0, 64, 64,//вырезаем кусок спрайта
+            0, 0, 32, 32,//масштабируем его в 2 раза меньше
             );
     }
 }
