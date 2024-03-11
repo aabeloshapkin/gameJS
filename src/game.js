@@ -6,14 +6,18 @@ export default class Game {
         this.loop = this.loop.bind(this);
     }
 
+    async init() {
+        this.view.init();
+    }
+
     start() {
         requestAnimationFrame(this.loop);
     }
 
     loop() {
         this.world.update();
-        this.view.update();
-        
+        this.view.update(this.world);
+
         requestAnimationFrame(this.loop)
     }
 }
