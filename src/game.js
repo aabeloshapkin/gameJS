@@ -8,6 +8,21 @@ export default class Game {
 
     async init() {
         this.view.init();
+
+        document.addEventListener('keydown', ({ code }) => {
+            switch (code) {
+                case  'ArrowUp':
+                    // this.playerMove("up");
+                    // break;
+                case  'ArrowRight':
+                case  'ArrowDown':
+                case  'ArrowLeft':
+                case  'Space':
+                case  'Enter':
+                    console.log(code)
+            }
+
+        });
     }
 
     start() {
