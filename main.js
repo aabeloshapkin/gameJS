@@ -11,4 +11,4 @@ const game = new Game({
     levels
 });
 
-console.log(game)
+// console.log(game)
