@@ -3,4 +3,8 @@ export default class View {
         this.canvas = canvas;
         this.context = canvas.getContext('2d');
     }
+
+    update(){
+        
+    }
 }

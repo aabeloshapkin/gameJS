@@ -5,4 +5,8 @@ export default class World {
     player1 = new Player();
     player2 = null;
     enemys = [];
+
+    update(){
+        
+    }
 }
